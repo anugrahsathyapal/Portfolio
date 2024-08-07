@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gupter:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sofia&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" <!-- />
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- grid also used to arrange eements in rows and colunms -->
+    <!-- grid-template-row/colums should be used only then we can implementt this -->
+    <!-- grid has fr unit -->
+    <!-- repeat can be used for multiple column/row value -->
+     <!-- animation only works on block -->
+      <!-- animation acan be get from aos animate usiing the cdn -->
+       <!-- script tag should be palced after the body tag -->
+        <!--  to initialize the aos animate then u shoud use paste the cdn and two scripts-->
+        <!-- aos animate can only be applied to block elements and not to inline elements -->
+         <!-- https://locomotivemtl.github.io/locomotive-scroll/ -->
+          <!-- js animate website -->
+          <!-- web hosting servers free hosting servers doesnt provides diirect access when searching through google search engine  -->
+           <!-- netlify can be used to host servers for free -->
+    <div id="container">
+        <nav>
+            <img class="logo" src="./Images/logo1.png" alt="logo">
+            <ul>
+                <li class="listitems"><a class="links" href="#home">HOME</a></li>
+                <li class="listitems"><a class="links" href="#about">ABOUT</a></li>
+                <li class="listitems"><a class="links" href="#skill">SKILLS</a></li>
+                <li class="listitems"><a class="links" href="#contact">CONTACT</a></li>
+
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="homeContents">
+                <h1 class=" animate__animated animate__shakeY" id="username">I'm Anugrah <span id="lname">Sathyapal</span></h1>
+                <p id="userDetails">
+                    This is my official portfolio website to describe all
+                    <br>
+                    Details and work exoerience in Web Development.
+                </p>
+                <a id="download" href="./Images/AN.pdf" download>DOWNLOAD CV</a>
+            </div>
+            <div class="homeImages">
+                <img src="./Images/shape.png" alt="shape" id="shape" class="group1" >
+                <img src="./Images/man2-removebg.png" alt="man" id="man" class="group1">
+            </div>
+        </section>
+        <section id="about">
+            <div class="sectionHead">
+                <h2 class="mainHead">About Me</h2>
+                <span class="subHead">Introduction</span>
+            </div>
+            <div class="aboutBody">
+                <div class="aboutImage"data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" >
+                    <img class="img1" src="./Images/flat-illustrated-about-me-concept_52683-59107.avif" alt="about">
+                </div>
+                <div class="aboutContent">
+                    <p>
+                        I am Anugrah Sathyapal, a dedicated and highly motivated computer science graduate with a strong foundation in computer science principles and a passion for coding and technological innovation. I am committed to contributing to cutting-edge projects, solving complex problems, and making a meaningful impact by collaborating with a dynamic team. I graduated with a B.Tech in 2024 from the College of Engineering Chengannur under the KTU board. In addition to my technical interests, I enjoy traveling and photography, which allow me to explore new places and capture unique moments.
+                    </p>
+                    <div class="informations">
+                        <div class="infoBox">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Anugrah Sathyapal </span>
+                        </div>
+                        <div class="infoBox">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>9037673394</span>
+                        </div>
+                        <div class="infoBox">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>anugrahsathyapal@gmail.com</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="skill">
+            <div class="sectionHead">
+                <h2 class="mainHead">Skills</h2>
+                <span class="subHead">My Skills</span>
+            </div>
+            <div class="skillContent">
+                <div class="progressBars">
+                    <div class="bars">
+                        <h3 class="barHead">HTML</h3>
+                        <span class="barPercent">92%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar htmlBar"></div>
+                    </div>
+                    <div class="bars">
+                        <h3 class="barHead">CSS</h3>
+                        <span class="barPercent">86%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar cssBar"></div>
+                    </div>
+                    <div class="bars">
+                        <h3 class="barHead">JS</h3>
+                        <span class="barPercent">82%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar jsBar"></div>
+                    </div>
+                    <div class="bars">
+                        <h3 class="barHead">REACT</h3>
+                        <span class="barPercent">90%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar reactBar"></div>
+                    </div>
+                    <div class="bars">
+                        <h3 class="barHead">PYTHON</h3>
+                        <span class="barPercent">96%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar pythonBar"></div>
+                    </div>
+                    <div class="bars">
+                        <h3 class="barHead">SQL</h3>
+                        <span class="barPercent">94%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar sqlBar"></div>
+                    </div>
+
+                </div>
+                <div class="skillImage" data-aos="fade-down-right">
+                    <img class="mySkills" src="./Images/skills.jpg" alt="skill">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="sectionHead">
+                <h2 class="mainHead">Contacts</h2>
+                <span class="subHead">My Contacts</span>
+            </div>
+            <div class="iconCollections">
+                <div class="icon">
+                    <a href="www.linkedin.com/in/anugrah-sathyapal-771619212" target="_blank"><i
+                            class="fa-brands fa-linkedin brands"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/anugrahsathyapal" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook brands"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-whatsapp brands"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <p id="copyright">&copy; My portfolio website - July 2024, All Rigths Reserved to &reg; Anugrah Sathyapal</p>
+            <div class="icon upArrow">
+                <a href="#container"><i class="fa-solid fa-angle-up brands"></i></a>
+
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</html>
